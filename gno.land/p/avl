@@ -1,4 +1,4 @@
-# Signing and broadcasting transactions
+# gno.land/p/avl
 
 ./build/gnokey maketx addpkg test1 --pkgpath "gno.land/p/avl" --pkgdir "examples/gno.land/p/avl" --deposit 100ugnot --gas-fee 1ugnot --gas-wanted 2000000 > addpkg.avl.unsigned.txt
 ./build/gnokey query "auth/accounts/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5"
