@@ -1,0 +1,6 @@
+# Signing and broadcasting transactions
+
+./build/gnokey maketx addpkg test1 --pkgpath "gno.land/p/avl" --pkgdir "examples/gno.land/p/avl" --deposit 100ugnot --gas-fee 1ugnot --gas-wanted 2000000 > addpkg.avl.unsigned.txt
+./build/gnokey query "auth/accounts/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5"
+./build/gnokey sign test1 --txpath addpkg.avl.unsigned.txt --chainid "test2" --number 0 --sequence 0 > addpkg.avl.signed.txt
+./build/gnokey broadcast addpkg.avl.signed.txt --remote localhost:26657
