@@ -1,0 +1,3 @@
+./build/gnokey maketx addpkg test1 --pkgpath "gno.land/r/boards" --pkgdir "examples/gno.land/r/boards" --deposit 100ugnot --gas-fee 1ugnot --gas-wanted 300000000 > addpkg.boards.unsigned.txt
+./build/gnokey sign test1 --txpath addpkg.boards.unsigned.txt --chainid "test2" --number 0 --sequence 1 > addpkg.boards.signed.txt
+./build/gnokey broadcast addpkg.boards.signed.txt --remote localhost:26657

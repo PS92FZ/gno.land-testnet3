@@ -1,0 +1,2 @@
+# gnoland web server
+go run ./gnoland/website
